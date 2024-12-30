@@ -13,10 +13,20 @@ This project enables the comparison of multiple language models, such as DeepSee
 ## **Project Structure**
 ```
 DeepSeek-MultiModel-Comparison/
-├── app.py                   # API with FastAPI
-├── Dockerfile               # Dockerfile for containerization
-├── requirements.txt         # Project dependencies
-└── README.md                # Project documentation
+├── notebooks/
+│   ├── model_comparison.ipynb   # Notebook principal para pruebas y análisis.
+├── api/
+│   ├── app.py                   # API REST para probar modelos (usando FastAPI o Flask).
+│   ├── requirements.txt         # Librerías necesarias para el API.
+├── models/
+│   ├── load_models.py           # Código para cargar DeepSeek-V3 y otros modelos.
+├── datasets/
+│   ├── input_data.json          # Datos de entrada para pruebas.
+├── results/
+│   ├── performance_metrics.csv  # Resultados de métricas.
+├── README.md                    # Descripción completa del proyecto.
+└── Dockerfile                   # Contenedorización con Docker.
+
 ```
 
 ## **Installation**
